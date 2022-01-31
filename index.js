@@ -13,6 +13,7 @@ async function main() {
 app.use(cors());
 app.use(express.json());
 app.use(logger.requestLogger);
+app.use(express.static('build'));
 app.get('/', (req, res) => {
   res.send('hello world');
 });
