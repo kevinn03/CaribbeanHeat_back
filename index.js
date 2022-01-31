@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 });
 app.use('/api/items', itemRouter);
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3003;
 app.listen(PORT, () => {
   console.log(`Listening on port: ${PORT}`);
 });
