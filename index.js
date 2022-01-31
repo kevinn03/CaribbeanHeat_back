@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 app.use(logger.requestLogger);
 app.get('/', (req, res) => {
-  console.log('hello world');
+  res.send('hello world');
 });
 app.use('/api/items', itemRouter);
 
