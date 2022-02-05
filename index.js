@@ -14,11 +14,19 @@ app.use(cors());
 app.use(express.json());
 app.use(logger.requestLogger);
 app.use(express.static('build'));
-app.get('/', (req, res) => {
-  res.send('hello world');
-});
 app.use('/api/items', itemRouter);
 
+app.get('/', (req, res) => {
+  res.json('hello world');
+});
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, './build', 'index.html'), (err) => {
+    if (err) {
+      console.log(err);
+    }
+  });
+});
 const PORT = process.env.PORT || 3003;
 app.listen(PORT, () => {
   console.log(`Listening on port: ${PORT}`);
