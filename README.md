@@ -7,7 +7,7 @@ Backend for Caribbean heat restaurant website
 
 http://caribbeanheat.herokuapp.com/
 
-Website built with: Node.js Express, MongoDB, React, Bootstrap
+Website built with: Node.js Express, MongoDB, React, Bootstrap, Cypress, Jest
 
 Api providing endpoints that allow for:
 
