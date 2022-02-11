@@ -5,6 +5,7 @@ const itemRouter = require('./controllers/items');
 const cors = require('cors');
 const logger = require('./utils/logger');
 const mongoose = require('mongoose');
+const path = require('path');
 main().catch((err) => console.log(err));
 async function main() {
   await mongoose.connect(process.env.MONGODB_URI);
