@@ -1,9 +1,7 @@
 const mongoose = require('mongoose');
 const orderSchema = mongoose.Schema({
   price: {
-    type: Number,
-    require: true,
-    min: 0,
+    type: Object,
   },
   items: [
     {
