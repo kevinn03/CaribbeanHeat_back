@@ -19,10 +19,6 @@ app.use(express.static('build'));
 app.use('/api/items', itemRouter);
 app.use('/api/orders', orderRouter);
 
-app.get('/', (req, res) => {
-  res.json('hello world');
-});
-
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, './build', 'index.html'), (err) => {
     if (err) {
