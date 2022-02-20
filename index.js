@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 const itemRouter = require('./controllers/items');
+const orderRouter = require('./controllers/orders');
 const cors = require('cors');
 const logger = require('./utils/logger');
 const mongoose = require('mongoose');
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use(logger.requestLogger);
 app.use(express.static('build'));
 app.use('/api/items', itemRouter);
+app.use('/api/orders', orderRouter);
 
 app.get('/', (req, res) => {
   res.json('hello world');
