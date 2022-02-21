@@ -1,29 +1,36 @@
-# CaribbeanHeat_back
-Backend for Caribbean heat restaurant website
+# Caribbean Heat restaurant Backend
 
-<h1 align="center">Caribbean Heat Restaurant</h1>
+Explore [CaribbeanHeat](https://caribbeanheat.herokuapp.com/)
 
-## About
-
-http://caribbeanheat.herokuapp.com/
-
-Website built with: Node.js Express, MongoDB, React, Bootstrap, Cypress, Jest
-
-Api providing endpoints that allow for:
-
-- Getting all menu items
-- Getting specific menu item
+Caribbean Heat is a restaurant website that allows users to browse the menu and make take out orders online. This website is my modern version take of the original https://caribbeanheat.ca
 
 
-## Install
+## Instructions
+* clone this repository
+* run ```npm install``` inside root directory and frontend directory
+* run the seed file
+* run ```npm run dev``` in root directory
+* navigate to ```localhost:3003``` in your browser
 
-git clone 
+## Technologies
+### Frontend
+* React.js
+* Bootstrap
 
-npm install
 
-npm run dev
+### Backend
+* MongoDB
+* Express.js
+* Node.js
 
-localhost:3003
+### Api providing endpoints that allow for:
+
+* Getting all menu items
+* Getting specific menu item
+* Getting all orders
+* Creating an order
+
+
 
 ## Endpoint Documentation
 
@@ -69,28 +76,30 @@ id: "61edc57b1e1f7b4a69be4201"
 
 Returns a item on the menu based on item.
 
+### GET /api/orders
+
+Returns all orders
+
+### POST /api/orders
+
+Creates an order
+
+
+### This to do
+* Add error handling
+* Add testing
+* Restructure subroutes
+* Add Admin page
+* Add statistics
+* style
 
 
 
-## To Do:
-
-- Add router to handle explicit urls for React router
-- Add testing
-- Add order model
-- Add testing
--*
-
-## Dependencies
-
-[axios] (https://www.npmjs.com/package/axios)
 
 
-[express] (https://www.npmjs.com/package/express)  
-Simple, robust web framework for Node
 
-[nodemon] (https://www.npmjs.com/package/nodemon)  
-Performs hot reloading of the application
 
-## Author
 
-👤 **Kevin Nguyen**
+
+
+
