@@ -12,6 +12,9 @@ Caribbean Heat is a restaurant website that allows users to browse the menu and 
 * run ```npm run dev``` in root directory
 * navigate to ```localhost:3003``` in your browser
 
+<img width="800" alt="caribbean heat pic" src="https://i.imgur.com/8YNkm5K.png">
+
+
 ## Technologies
 ### Frontend
 * React.js
