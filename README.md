@@ -33,7 +33,7 @@ Caribbean Heat is a restaurant website that allows users to browse the menu and 
 * Getting all orders
 * Creating an order
 
-<img src="https://user-images.githubusercontent.com/52670122/111555355-7926a100-8745-11eb-9bd7-e603aaf3110b.gif" width="800" />
+<img src="https://j.gifs.com/79JWEG.gif" width="800" />
 
 ## Endpoint Documentation
 
